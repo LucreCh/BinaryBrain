@@ -7,6 +7,26 @@
 .menu-nav {
 	display: flex;
 }
+
+.contenidoPrincipal-cursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+	width: 23%;
+	margin: 1%;
+}
+
+.contenidoPrincipal-cursos-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.contenidoPrincipal-cursos-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+
 /* Responsive */
 @media(max-width: 768px) {
 	.menu-nav {
@@ -21,4 +41,11 @@
 }
 .menu-nav-link-app {
     order: -1;
+}
+.contenidoPrincipal-cursos {
+	flex-direction: column;
+}
+
+.contenidoPrincipal-cursos-link {
+	width: 100%;
 }
